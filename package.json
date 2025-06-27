@@ -5,6 +5,8 @@
   "type": "module",
   "homepage": "https://webdep24h.github.io/QTHome-Construction",
   "scripts": {
+      "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "dev": "yes | pnpm install && vite",
     "build": "yes | pnpm install && rm -rf node_modules/.vite-temp && tsc -b && vite build",
     "lint": "yes | pnpm install && eslint .",
